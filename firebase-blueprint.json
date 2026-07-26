@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "node_activities": {
+      "title": "Node Protocol Activity",
+      "description": "Log of specialist node activities and neural market intelligence alerts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique identifier" },
+        "nodeType": { "type": "string", "description": "Type of specialist node" },
+        "nodeName": { "type": "string", "description": "Display name of the specialist node" },
+        "title": { "type": "string", "description": "Activity log title" },
+        "description": { "type": "string", "description": "Detailed summary of findings" },
+        "severity": { "type": "string", "description": "Severity level" },
+        "status": { "type": "string", "description": "Status" },
+        "timestamp": { "type": "string", "description": "Timestamp string" },
+        "actionRequired": { "type": "string", "description": "Recommended strategic response" }
+      },
+      "required": ["nodeType", "nodeName", "title", "timestamp"]
+    },
+    "campaign_events": {
+      "title": "Campaign Event Log",
+      "description": "Scheduled and active marketing campaign events",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique event identifier" },
+        "title": { "type": "string", "description": "Campaign title" },
+        "category": { "type": "string", "description": "Category or type" },
+        "date": { "type": "string", "description": "Scheduled launch date" },
+        "time": { "type": "string", "description": "Scheduled time" },
+        "status": { "type": "string", "description": "Status" },
+        "assignee": { "type": "string", "description": "Lead strategist" },
+        "channel": { "type": "string", "description": "Marketing channel" },
+        "budget": { "type": "string", "description": "Allocated budget" }
+      },
+      "required": ["title", "status", "channel"]
+    }
+  }
+}

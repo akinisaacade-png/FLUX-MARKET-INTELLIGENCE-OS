@@ -1,0 +1,6 @@
+{
+  "name": "FLUX MARKET INTELLIGENCE OS",
+  "description": "Dark-themed AI-driven SaaS control panel for digital marketing intelligence, orchestrating 4 specialist nodes, analytics, strategy AI, and real-time execution.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
